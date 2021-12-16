@@ -65,13 +65,13 @@ const BootcampSchema = new mongoose.Schema({
 
   },
 
-  carreers: {
+  careers: {
     // Array of strings
     type: [String],
     required: true,
     enum: [
-      'Web Developement',
-      'Mobile Developement',
+      'Web Development',
+      'Mobile Development',
       'UI/UX',
       'Data Science',
       'Business',
