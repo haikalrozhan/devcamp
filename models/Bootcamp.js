@@ -18,7 +18,7 @@ const BootcampSchema = new mongoose.Schema({
     maxlength: [500, 'Description cannot be more 500 characters']
   },
 
-  websites: {
+  website: {
     type: String,
     match: [
       /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/,
@@ -49,11 +49,11 @@ const BootcampSchema = new mongoose.Schema({
     type: {
       type: String,
       enum: ['Point'],
-      required: true
+      // required: true
     },
     coordinates: {
       type: [Number],
-      required: true,
+      // required: true,
       index: '2dsphere'
     },
 
